@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h3>Color<span>Picker</span></h3>
+        <h3>Color<b>the</b><span>Flag</span></h3>
         <div class='color' :style="'background:'+color"></div>
     </header>
 </template>
