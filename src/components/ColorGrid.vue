@@ -20,7 +20,8 @@ export default {
     name: 'color-grid',
     props: [
         'color',
-        'flags'
+        'flags',
+        'flagIndex'
     ],
     data: function(){
         return{
@@ -56,7 +57,7 @@ export default {
                 let cell = document.getElementById('p'+i);
                 let cellColor = cell.style.backgroundColor;
                 cellColor = rgb2hex(cellColor);
-                let correctColor = this.flags.Flags[0].colors[i].color;
+                let correctColor = this.flags.Flags[this.flagIndex].colors[i].color;
                 
                 if(cellColor == correctColor) points++;
             }
