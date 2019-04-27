@@ -1,7 +1,10 @@
 <template>
     <header>
         <h3>Color<b>the</b><span>Flag</span></h3>
-        <div class='color' :style="'background:'+color"></div>
+        <div class='current'>
+            Current color: 
+            <div class='color' :style="'background:'+color"></div>
+        </div>
     </header>
 </template>
 
@@ -35,5 +38,13 @@ export default {
         width: 25px;
         height: 25px;
         border: 1px dashed #F3F3F3;
+        margin-left: 8px;
+    }
+    .current{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-items: center;
+        font-weight: bold;
     }
 </style>

@@ -27,5 +27,10 @@ export default {
 </script>
 
 <style scoped>
-
+    div{
+        margin-top: 16px;
+    }
+    span{
+        font-weight: bold;
+    }
 </style>

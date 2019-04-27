@@ -27,6 +27,7 @@ export default {
         width: 125px;
         margin: 15px auto;
         grid-template-columns: repeat(5, 25px);
+        grid-gap: 5px;
     }
     .color{
         border: 1px dashed #000;
